@@ -24,5 +24,6 @@
 	<link rel="stylesheet" href="{{ asset('css/slick.css') }}">
 	<link rel="stylesheet" href="{{ asset('css/nice-select.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}"> 
+    <link href="css/clean-blog.min.css" rel="stylesheet">
     
 </head>

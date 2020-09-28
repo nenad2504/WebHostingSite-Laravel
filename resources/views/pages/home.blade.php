@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <main>
+<main>
     <!-- Hero Area Start-->
     <div class="slider-area">
         <div class="single-slider slider-height d-flex align-items-center">
