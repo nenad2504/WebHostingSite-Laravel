@@ -1,3 +1,4 @@
+<body>    
     <header>
         <!-- Header Start -->
         <div class="header-area header-transparent">
