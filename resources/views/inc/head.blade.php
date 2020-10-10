@@ -11,6 +11,8 @@
 
 	<!-- CSS here -->
 	<link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+	<link rel="stylesheet" href="{{ asset('css/styleSignUp.css') }}">
+	<link rel="stylesheet" href="{{ asset('css/styleLogIn.css') }}">
 	<link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
 	<link rel="stylesheet" href="{{ asset('css/slicknav.css') }}">
     <link rel="stylesheet" href="{{ asset('css/flaticon.css') }}">

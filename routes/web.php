@@ -22,10 +22,19 @@ Route::get('/about', function () {
     return view('pages.about');
 });
 
-Route::get('/post', function () {
-    return view('pages.post');
+Route::get('/blog', function () {
+    return view('pages.blog');
 });
 
 Route::get('/contact', function () {
     return view('pages.contact');
+});
+
+
+Route::get('/login', function () {
+    return view('pages.login');
+});
+
+Route::get('/register', function () {
+    return view('pages.registration');
 });

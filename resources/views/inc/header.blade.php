@@ -7,7 +7,7 @@
                     <div class="menu-wrapper d-flex align-items-center justify-content-between">
                         <!-- Logo -->
                         <div class="logo">
-                            <a href="index.html"><img src="{{ asset('img/logo/logo.png') }}" alt=""></a>
+                            <a href="{{ url('/home') }}"><img src="{{ asset('img/logo/logo.png') }}" alt=""></a>
                         </div>
                         <!-- Main-menu -->
                         <div class="main-menu f-right d-none d-lg-block">
@@ -27,8 +27,8 @@
                         </div>          
                         <!-- Header-btn -->
                         <div class="header-btns d-none d-lg-block f-right">
-                            <a href="#" class="mr-40">+880 156 278 256</a>
-                            <a href="#" class="btn">Sign In</a>
+                        <a href="{{ url('/login') }}" class="btn">Log In</a>
+                            <a href="{{ url('/register') }}" class="btn">Sign In</a>
                         </div>
                         <!-- Mobile Menu -->
                         <div class="col-12">
