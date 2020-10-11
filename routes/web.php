@@ -31,10 +31,15 @@ Route::get('/contact', function () {
 });
 
 
-Route::get('/login', function () {
-    return view('pages.login');
-});
+//Register
+Route::get('/register', 'RegisterController@create');
+Route::post('/register', 'RegisterController@insertNewUser');
 
-Route::get('/register', function () {
-    return view('pages.registration');
-});
+//Login
+Route::get('/login', 'LoginController@create');
+Route::post('/login', 'LoginController@store');
+Route::get('/logout', 'LoginController@destroy');
+
+
+//Show all users
+Route::get('/users', 'RegisterController@showAllUsers');

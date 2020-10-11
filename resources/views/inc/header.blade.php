@@ -22,14 +22,27 @@
                                         </ul>
                                     </li>
                                     <li><a href="{{ url('/contact') }}">Contact</a></li>
+                                    @if( auth()->check() )
+                                        <li class="nav-item">
+                                            <a class="nav-link font-weight-bold" href="#">Hi {{ auth()->user()->name }}</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/logout">Log Out</a>
+                                        </li>
+                                    @else
+                                        <div class="header-btns d-none d-lg-block f-right">
+                                            <a href="{{ url('/login') }}" class="btn">Log In</a>
+                                            <a href="{{ url('/register') }}" class="btn">Sign In</a>
+                                        </div>
+                                    @endif
                                 </ul>
                             </nav>
                         </div>          
-                        <!-- Header-btn -->
+                        <!-- Header-btn
                         <div class="header-btns d-none d-lg-block f-right">
                         <a href="{{ url('/login') }}" class="btn">Log In</a>
                             <a href="{{ url('/register') }}" class="btn">Sign In</a>
-                        </div>
+                        </div> -->
                         <!-- Mobile Menu -->
                         <div class="col-12">
                             <div class="mobile_menu d-block d-lg-none"></div>

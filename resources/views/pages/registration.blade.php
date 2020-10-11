@@ -1,22 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-<!-- Page Header -->
-<header class="masthead" style="background-image: url({{ asset('img/register1.jpg')}})">
-  <div class="overlay"></div>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
-        <div class="page-heading">
-          <h1>Sign Up</h1>
-          <span class="subheading">Have questions? I have answers.</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
-
-
  <!-- Signup form -->
  <section class="w3l-signup">
 		<div class="overlay">
@@ -26,17 +10,18 @@
 				</div>
 				<div class="form-section">
 					<h3>Sign up</h3>
-					<form action="#" method="post" class="signin-form">
+					<form action="/register" method="post" class="signin-form">
+					@csrf
 						<div class="form-input">
-							<input type="text" name="Username" placeholder="Username" required="" autofocus>
+							<input type="text" name="name" placeholder="Username" required="" autofocus>
 						</div>
 						<div class="form-input">
-							<input type="email" name="Username" placeholder="Email" required="" autofocus>
+							<input type="email" name="email" placeholder="Email" required="" autofocus>
 						</div>
 						<div class="form-input">
 							<input type="password" name="password" placeholder="Password" required="">
 						</div>
-						<button type="submit" class="btn btn-primary theme-button mt-4">Sign Up</button>
+						<button type="submit" name="submit" class="btn btn-primary theme-button mt-4">Sign Up</button>
 					</form><p class="signup">Already a customer? <a href="{{ url('/login') }}" class="signuplink">Login now</a></p>
 				</div>
 			</div>
